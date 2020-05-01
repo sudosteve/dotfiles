@@ -1,0 +1,39 @@
+#!/bin/sh
+
+# Use neovim for vim if present.
+command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
+
+# Verbosity and general stuff
+alias \
+    bat='cat /sys/class/power_supply/BAT?/capacity' \
+    cp='cp -iv' \
+    mv='mv -iv' \
+    rm='rm -v' \
+    mkd='mkdir -pv' \
+    yt='f(){(mpv $1 &)};f'
+
+# Abbreviate common commands
+alias \
+    g=git \
+    gs="git status" \
+    sdn="sudo shutdown now" \
+    srb="sudo reboot" \
+    p="sudo pacman" \
+    porphans="pacman -Qtdq" \
+    orun="optirun" \
+    vi="vim"
+
+# volume and brightness
+alias \
+    volumeup="pulsemixer --change-volume +5 && pkill -RTMIN+10 $STATUSBAR" \
+    volumedo="pulsemixer --change-volume -5 && pkill -RTMIN+10 $STATUSBAR" \
+    volumemu="pulsemixer --toggle-mute && pkill -RTMIN+10 $STATUSBAR" \
+    brightup="xbacklight -inc 20" \
+    brightdo="xbacklight -dec 20"
+
+# ssh
+alias \
+    vnctunnel='f() {ssh bigboi -L 590$1:127.0.0.1:590$1 -p 2221};f' \
+    fukutunnel='autossh -M 22002 -fN -i /home/steve/.ssh/id_rsa -L 2224:localhost:2224 bigboi' \
+    minecraft='optirun minecraft-launcher' \
+

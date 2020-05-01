@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# Source xprofile
+[ -f "${XDG_CONFIG_HOME}/X11/xprofile" ] && . "${XDG_CONFIG_HOME}/X11/xprofile"
+
+# xsetroot -solid "#edbcb9"
+export STATUSBAR="i3blocks"
+exec i3
+

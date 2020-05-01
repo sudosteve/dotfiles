@@ -1,0 +1,17 @@
+!! Colorscheme
+
+! special
+*.foreground: #93a1a1
+*.background: #141c21
+*.cursorColor: #afbfbf
+
+!! URxvt Appearance
+
+URxvt.scrollBar: off
+! URxvt.font: xft:DejaVu Sans Mono:size=12
+! *.font: xft:Dina TTF:pixelsize=12
+! *.font: xft:UbuntuMono:size=12
+! *.font: xft:Iosevka:size=12
+*.font: xft:Fira Mono:size=10
+
+

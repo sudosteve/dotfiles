@@ -1,0 +1,5 @@
+[user]
+	email = stephen.thomasdorin@gmail.com
+	name = Stephen Thomas-Dorin
+[core]
+	editor = nvim

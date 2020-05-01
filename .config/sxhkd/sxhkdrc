@@ -1,0 +1,32 @@
+# Keyboard mappings for sxhkd
+
+# Basic binds
+alt + Return
+        $TERMINAL
+alt + grave
+        dmenuunicode
+
+# System stuff
+# put power off, scr lock, etc.
+
+# Recording
+# Screenshots
+Print
+        maim pix/maim/pic-full-$(date '+%y%m%d-%H%M-%S').png
+shift + Print
+        maimpick
+
+# Volume
+XF86AudioRaiseVolume
+        pulsemixer --change-volume +5 && pkill -RTMIN+10 $STATUSBAR
+XF86AudioLowerVolume
+        pulsemixer --change-volume -5 && pkill -RTMIN+10 $STATUSBAR
+XF86AudioMute
+        pulsemixer --toggle-mute && pkill -RTMIN+10 $STATUSBAR
+
+# Brightness
+XF86MonBrightnessUp
+        xbacklight -inc 20
+XF86MonBrightnessDown
+        xbacklight -dec 20
+
