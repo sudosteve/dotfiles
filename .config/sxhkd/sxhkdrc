@@ -5,6 +5,10 @@ alt + Return
         $TERMINAL
 alt + grave
         dmenuunicode
+alt + d
+        j4-dmenu-desktop
+alt + b
+        brave
 
 # System stuff
 # put power off, scr lock, etc.
@@ -18,9 +22,9 @@ shift + Print
 
 # Volume
 XF86AudioRaiseVolume
-        pulsemixer --change-volume +5 && pkill -RTMIN+10 $STATUSBAR
+        pulsemixer --max-volume 100 --change-volume +5 && pkill -RTMIN+10 $STATUSBAR
 XF86AudioLowerVolume
-        pulsemixer --change-volume -5 && pkill -RTMIN+10 $STATUSBAR
+        pulsemixer --max-volume 100 --change-volume -5 && pkill -RTMIN+10 $STATUSBAR
 XF86AudioMute
         pulsemixer --toggle-mute && pkill -RTMIN+10 $STATUSBAR
 

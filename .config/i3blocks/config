@@ -15,19 +15,19 @@ signal=5
 color=#c556f5
 interval=30
 
-[cpu]
-color=#56c0f5
-interval=15
-
-[volume]
-color=#c556f5
-interval=once
-signal=10
-
 [disk]
 color=#56c0f5
 interval=60
 command=disk /
+
+[cpu]
+color=#c556f5
+interval=15
+
+[volume]
+color=#56c0f5
+interval=once
+signal=10
 
 [battery]
 color=#c556f5

@@ -35,5 +35,4 @@ alias \
 alias \
     vnctunnel='f() {ssh bigboi -L 590$1:127.0.0.1:590$1 -p 2221};f' \
     fukutunnel='autossh -M 22002 -fN -i /home/steve/.ssh/id_rsa -L 2224:localhost:2224 bigboi' \
-    minecraft='optirun minecraft-launcher' \
 

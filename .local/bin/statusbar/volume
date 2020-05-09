@@ -13,8 +13,8 @@ case $BLOCK_BUTTON in
 	# 4) pamixer --allow-boost -i 1 ;;
 	# 5) pamixer --allow-boost -d 1 ;;
         2) pulsemixer --toggle-mute && pkill -RTMIN+10 $STATUSBAR ;;
-        4) pulsemixer --change-volume +5 && pkill -RTMIN+10 $STATUSBAR ;;
-        5) pulsemixer --change-volume -5 && pkill -RTMIN+10 $STATUSBAR ;;
+        4) pulsemixer --max-volume 100 --change-volume +5 && pkill -RTMIN+10 $STATUSBAR ;;
+        5) pulsemixer --max-volume 100 --change-volume -5 && pkill -RTMIN+10 $STATUSBAR ;;
 	3) notify-send "📢 Volume module" "\- Shows volume 🔊, 🔇 if muted.
 - Middle click to mute.
 - Scroll to change."

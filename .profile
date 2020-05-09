@@ -37,5 +37,8 @@ export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
 # export TMUX_TMPDIR="$XDG_RUNTIME_DIR"
 
 # Start graphical server on tty1
-[ "$(tty)" = "/dev/tty1" ] && ! ps -e | grep -qw Xorg && exec startx "$XDG_CONFIG_HOME/X11/xinitrc"
+[ "$(tty)" = "/dev/tty1" ] && ! ps -e | grep -qw Xorg && startx "$XDG_CONFIG_HOME/X11/xinitrc"
+
+sudo /usr/bin/prime-switch
+logout
 
