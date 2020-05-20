@@ -30,7 +30,7 @@ export __GL_SHADER_DISK_CACHE_PATH="$XDG_CACHE_HOME/nv"
 # data:
 export GNUPGHOME="$XDG_DATA_HOME/gnupg"
 export PASSWORD_STORE_DIR="$XDG_DATA_HOME/password-store"
-export CARGO_HOME="${XDG_DATA_HOME:-$HOME/.local/share}/cargo"
+export CARGO_HOME="$XDG_DATA_HOME/cargo"
 
 # runtime:
 export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
