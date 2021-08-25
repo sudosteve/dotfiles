@@ -22,11 +22,11 @@ shift + Print
 
 # Volume
 XF86AudioRaiseVolume
-        pulsemixer --max-volume 100 --change-volume +5 && pkill -RTMIN+10 $STATUSBAR
+        pulsemixer --max-volume 100 --change-volume +5 && pkill -RTMIN+10 i3blocks
 XF86AudioLowerVolume
-        pulsemixer --max-volume 100 --change-volume -5 && pkill -RTMIN+10 $STATUSBAR
+        pulsemixer --max-volume 100 --change-volume -5 && pkill -RTMIN+10 i3blocks
 XF86AudioMute
-        pulsemixer --toggle-mute && pkill -RTMIN+10 $STATUSBAR
+        pulsemixer --toggle-mute && pkill -RTMIN+10 i3blocks
 
 # Brightness
 XF86MonBrightnessUp

@@ -8,4 +8,8 @@ case $BLOCK_BUTTON in
 - Middle click to open htop." ;;
 esac
 
-sensors | awk '/Core 0/ {print "🌡", $3}'
+# intel:
+# sensors | awk '/Core 0/ {print "🌡", $3}'
+
+# amd:
+sensors | awk '/Tdie/ {print "🌡", $2}'

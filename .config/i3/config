@@ -9,9 +9,7 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-# exec_always wal -i ~/Pictures/RickandMorty.png
-# exec_always wal -i ~/Pictures/sun.jpg --backend haishoku
-exec_always wal -i ~/.config/wal.jpg
+exec_always wal -i ~/.config/wallpapers/winter.jpeg
 # exec_always redshift -P -O 3000
 
 for_window [class=".*"] border pixel 5
@@ -20,6 +18,7 @@ gaps outer 0
 smart_borders on
 
 for_window [instance="origin.exe"] floating enable
+for_window [class="steam_app_1182480"] floating enable
 
 set $mod Mod1
 

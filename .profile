@@ -33,12 +33,11 @@ export PASSWORD_STORE_DIR="$XDG_DATA_HOME/password-store"
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
 
 # runtime:
-export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
+# This one seems to break proton so it is commented out for now
+# export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
 # export TMUX_TMPDIR="$XDG_RUNTIME_DIR"
 
 # Start graphical server on tty1
-[ "$(tty)" = "/dev/tty1" ] && ! ps -e | grep -qw Xorg && startx "$XDG_CONFIG_HOME/X11/xinitrc"
+[ "$(tty)" = "/dev/tty1" ] && ! ps -e | grep -qw Xorg && startx "$XDG_CONFIG_HOME/X11/xinitrc" && logout
 
-sudo /usr/bin/prime-switch
-logout
 
