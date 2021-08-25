@@ -1,0 +1,65 @@
+[[store]]
+  name = 'amazon'
+  captcha_id = 'idk'
+  instock_id = '#add-to-cart-button'
+  
+  [[item]]
+    name = 'ryzen5800x'
+    url = 'https://www.amazon.com/dp/B0815XFSGK'
+    max_price = 500
+
+  [[item]]
+    name = 'ryzen5900x'
+    url = 'https://www.amazon.com/dp/B08164VTWH'
+    max_price = 600
+
+  # [[item]]
+  #   name = 'rtx3080(asus strix oc)'
+  #   url = 'https://www.amazon.com/dp/B08J6F174Z'
+  #   max_price = 900
+
+  # [[item]]
+  #   name = 'rtx3080(asus tuf)'
+  #   url = 'https://www.amazon.com/dp/B08HHDP9DW'
+  #   max_price = 800
+
+  # [[item]]
+  #   name = 'rtx3080(asus tuf oc)'
+  #   url = 'https://www.amazon.com/dp/B08HH5WF97'
+  #   max_price = 800
+
+  [[item]]
+    name = 'rtx3080(msi gaming x trio)'
+    url = 'https://www.amazon.com/dp/B08HR7SV3M'
+    max_price = 800
+
+  # [[item]]
+  #   name = 'rtx3080(msi ventus 3x oc)'
+  #   url = 'https://www.amazon.com/dp/B08HR5SXPS'
+  #   max_price = 800
+
+  # [[item]]
+  #   name = 'rtx3080(gigabyte eagle oc)'
+  #   url = 'https://www.amazon.com/dp/B08HJS2JLJ'
+  #   max_price = 800
+
+  # [[item]]
+  #   name = 'rtx3080(gigabyte gaming oc)'
+  #   url = 'https://www.amazon.com/dp/B08HJTH61J'
+  #   max_price = 800
+
+  # [[item]]
+  #   name = 'rtx3080(pny xlr8)'
+  #   url = 'https://www.amazon.com/dp/B08HBR7QBM'
+  #   max_price = 800
+
+  # [[item]]
+  #   name = 'rtx3080(pny xlr8)'
+  #   url = 'https://www.amazon.com/dp/B08HBTJMLJ'
+  #   max_price = 800
+
+  # [[item]]
+  #   name = 'rtx3080(zotac trinity)'
+  #   url = 'https://www.amazon.com/dp/B08HJNKT3P'
+  #   max_price = 800
+

@@ -1,0 +1,23 @@
+[amazon]
+  captcha_id = 'idk'
+  instock_id = '#add-to-cart-button'
+  
+  [[amazon.item]]
+    name = 'ryzen5800x'
+    url = 'https://www.amazon.com/dp/B0815XFSGK'
+    max_price = 500
+
+  [[amazon.item]]
+    name = 'ryzen5900x'
+    url = 'https://www.amazon.com/dp/B08164VTWH'
+    max_price = 600
+
+  [[amazon.item]]
+    name = 'rtx3080(msi gaming x trio)'
+    url = 'https://www.amazon.com/dp/B08HR7SV3M'
+    max_price = 800
+
+[newegg]
+  captcha_id = '#idk'
+  instock_id = '#stilldk'
+

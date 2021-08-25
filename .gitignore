@@ -1,0 +1,48 @@
+.config/BraveSoftware/
+.config/Code - OSS/
+.config/Epic/
+.config/Google/
+.config/Minecraft Linux Launcher/
+.config/QtProject.conf
+.config/UNDERTALE/
+.config/VirtualBox/
+.config/cef_user_data/
+.config/chromium/
+.config/configstore/
+.config/dconf/
+.config/discord/
+.config/gtk-2.0/
+.config/htop/
+.config/lutris/
+.config/mimeapps.list
+.config/npm/
+.config/nvim/.netrwhist
+.config/oh-my-zsh/
+.config/pavucontrol.ini
+.config/pulse/
+.config/spotify/
+.config/zoomus.conf
+.config/zsh/.zcompdump-*
+.local/lib/
+.local/share/Android/
+.local/share/Google/
+.local/share/Minecraft Linux Launcher/
+.local/share/Steam/
+.local/share/TelegramDesktop/
+.local/share/applications/mimeinfo.cache
+.local/share/applications/userapp-Telegram Desktop-*
+.local/share/cargo/
+.local/share/gnupg/
+.local/share/gradle/
+.local/share/icons/
+.local/share/keyrings/
+.local/share/lutris/
+.local/share/nvim/
+.local/share/pki/
+.local/share/ranger/
+.local/share/recently-used.xbel
+.local/share/vulkan/
+.local/share/weatherreport
+.local/share/xorg/
+.local/share/zathura/
+.local/share/zsh/
