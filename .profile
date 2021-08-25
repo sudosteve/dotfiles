@@ -22,6 +22,8 @@ export WGETRC="$XDG_CONFIG_HOME/wget/wgetrc"
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 # export ALSA_CONFIG_PATH="$XDG_CONFIG_HOME/alsa/asoundrc"
 export IPYTHONDIR="$XDG_CONFIG_HOME/ipython"
+export ELM_HOME="$XDG_CONFIG_HOME/elm"
+export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
 
 # cache:
 export LESSHISTFILE="-"
@@ -31,6 +33,7 @@ export __GL_SHADER_DISK_CACHE_PATH="$XDG_CACHE_HOME/nv"
 export GNUPGHOME="$XDG_DATA_HOME/gnupg"
 export PASSWORD_STORE_DIR="$XDG_DATA_HOME/password-store"
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
+export GRADLE_USER_HOME="$XDG_DATA_HOME/gradle"
 
 # runtime:
 # This one seems to break proton so it is commented out for now
