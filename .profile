@@ -41,6 +41,10 @@ export GRADLE_USER_HOME="$XDG_DATA_HOME/gradle"
 # export TMUX_TMPDIR="$XDG_RUNTIME_DIR"
 
 # Start graphical server on tty1
-[ "$(tty)" = "/dev/tty1" ] && ! ps -e | grep -qw Xorg && startx "$XDG_CONFIG_HOME/X11/xinitrc" && logout
+[ "$(tty)" = "/dev/tty1" ] \
+    && ! ps -e | grep -qw Xorg \
+    && startx "$XDG_CONFIG_HOME/X11/xinitrc" \
+    && ( [ ! -f /usr/bin/prime-switch ] || sudo /usr/bin/prime-switch ) \
+    && logout
 
 

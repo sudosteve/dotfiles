@@ -9,7 +9,7 @@ case $BLOCK_BUTTON in
 esac
 
 # intel:
-# sensors | awk '/Core 0/ {print "🌡", $3}'
+sensors | awk '/Core 0/ {print "🌡", $3}'
 
 # amd:
 sensors | awk '/Tdie/ {print "🌡", $2}'

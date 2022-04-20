@@ -4,6 +4,7 @@
 .config/Google/
 .config/Minecraft Linux Launcher/
 .config/QtProject.conf
+.config/Thunar/
 .config/UNDERTALE/
 .config/VirtualBox/
 .config/cef_user_data/
@@ -21,6 +22,7 @@
 .config/pavucontrol.ini
 .config/pulse/
 .config/spotify/
+.config/xfce4/
 .config/zoomus.conf
 .config/zsh/.zcompdump-*
 .local/lib/

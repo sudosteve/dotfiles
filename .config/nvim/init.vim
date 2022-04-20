@@ -34,7 +34,8 @@ set expandtab
 set shiftwidth=4
 set softtabstop=4
 filetype plugin indent on
-" autocmd Filetype htmldjango setlocal sts=2 sw=2 expandtab
+autocmd Filetype htmldjango setlocal sts=2 sw=2 expandtab
+autocmd Filetype html setlocal sts=2 sw=2 expandtab
 
 set colorcolumn=81
 set mouse=a         " mouse scrolling
