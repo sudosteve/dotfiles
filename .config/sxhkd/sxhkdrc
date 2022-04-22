@@ -16,7 +16,7 @@ alt + b
 # Recording
 # Screenshots
 Print
-        maim pix/maim/pic-full-$(date '+%y%m%d-%H%M-%S').png
+        mkdir -p pix/maim && maim pix/maim/pic-full-$(date '+%y%m%d-%H%M-%S').png
 shift + Print
         maimpick
 
