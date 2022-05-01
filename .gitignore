@@ -3,6 +3,7 @@
 .config/Epic/
 .config/Google/
 .config/Minecraft Linux Launcher/
+.config/QDirStat/
 .config/QtProject.conf
 .config/Thunar/
 .config/UNDERTALE/
@@ -10,18 +11,25 @@
 .config/cef_user_data/
 .config/chromium/
 .config/configstore/
+.config/corectrl/
 .config/dconf/
 .config/discord/
 .config/gtk-2.0/
+.config/gtk-3.0/
 .config/htop/
+.config/libfm/
 .config/lutris/
+.config/menus
 .config/mimeapps.list
 .config/npm/
 .config/nvim/.netrwhist
 .config/oh-my-zsh/
 .config/pavucontrol.ini
 .config/pulse/
+.config/rpcs3/
 .config/spotify/
+.config/sqlitebrowser/
+.config/unity3d/
 .config/xfce4/
 .config/zoomus.conf
 .config/zsh/.zcompdump-*
@@ -31,14 +39,20 @@
 .local/share/Minecraft Linux Launcher/
 .local/share/Steam/
 .local/share/TelegramDesktop/
+.local/share/applications/discord-*
 .local/share/applications/mimeinfo.cache
 .local/share/applications/userapp-Telegram Desktop-*
+.local/share/applications/wine-extension-*
+.local/share/applications/wine/
 .local/share/cargo/
+.local/share/desktop-directories/
 .local/share/gnupg/
 .local/share/gradle/
+.local/share/gvfs-metadata/
 .local/share/icons/
 .local/share/keyrings/
 .local/share/lutris/
+.local/share/mime/
 .local/share/nvim/
 .local/share/pki/
 .local/share/ranger/
