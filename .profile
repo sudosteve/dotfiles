@@ -5,8 +5,8 @@ export PATH="$PATH:$(du "$HOME/.local/bin/" | cut -f2 | tr '\n' ':' | sed 's/:*$
 
 # Default programs:
 export EDITOR="nvim"
-export TERMINAL="urxvt"
-# export TERMINAL="alacritty"
+# export TERMINAL="urxvt"
+export TERMINAL="alacritty"
 export BROWSER="brave"
 export READER="zathura"
 
@@ -33,7 +33,12 @@ export __GL_SHADER_DISK_CACHE_PATH="$XDG_CACHE_HOME/nv"
 export GNUPGHOME="$XDG_DATA_HOME/gnupg"
 export PASSWORD_STORE_DIR="$XDG_DATA_HOME/password-store"
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
+export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
 export GRADLE_USER_HOME="$XDG_DATA_HOME/gradle"
+
+# export PATH="$PATH:$(du "$CARGO_HOME/bin/" | cut -f2 | tr '\n' ':' | sed 's/:*$//')"
+# export PATH="$(du "$CARGO_HOME/bin/" | cut -f2 | tr '\n' ':' | sed 's/:*$//'):$PATH"
+export PATH="$PATH:$XDG_DATA_HOME/npm/bin"
 
 # runtime:
 # This one seems to break proton so it is commented out for now

@@ -53,10 +53,12 @@
 .local/share/keyrings/
 .local/share/lutris/
 .local/share/mime/
+.local/share/npm/
 .local/share/nvim/
 .local/share/pki/
 .local/share/ranger/
 .local/share/recently-used.xbel
+.local/share/rustup/
 .local/share/vulkan/
 .local/share/weatherreport
 .local/share/xorg/
