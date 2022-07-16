@@ -23,6 +23,7 @@
 .config/mimeapps.list
 .config/npm/
 .config/nvim/.netrwhist
+.config/obs-studio/
 .config/oh-my-zsh/
 .config/pavucontrol.ini
 .config/pulse/
