@@ -8,6 +8,7 @@
 .config/Thunar/
 .config/UNDERTALE/
 .config/VirtualBox/
+.config/VSCodium/
 .config/cef_user_data/
 .config/chromium/
 .config/configstore/
@@ -38,6 +39,7 @@
 .local/share/Android/
 .local/share/Google/
 .local/share/Minecraft Linux Launcher/
+.local/share/PolyMC/
 .local/share/Steam/
 .local/share/TelegramDesktop/
 .local/share/applications/discord-*

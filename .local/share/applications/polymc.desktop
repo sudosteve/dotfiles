@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Minecraft
+Version=1.0
+Comment=PolyMC Minecraft Launcher
+Type=Application
+Exec=polymc
+StartupNotify=true
+Icon=org.polymc.PolyMC
+Categories=Game;Application;
+StartupWMClass=PolyMC
