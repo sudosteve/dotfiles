@@ -9,7 +9,14 @@ case $BLOCK_BUTTON in
 esac
 
 # intel:
-sensors | awk '/Core 0/ {print "🌡", $3}'
+# sensors | awk '/Core 0/ {print "🌡", $3}'
+temp=$(sensors | awk '/Core / {print $3}' | tr -d "+°C" | sort -n | tail -n1)
 
 # amd:
-sensors | awk '/Tdie/ {print "🌡", $2}'
+# sensors | awk '/Tdie/ {print "🌡", $2}'
+if [[ "$temp" == "" ]]
+then
+    temp=$(sensors | awk '/Tdie/ {print $2}' | tr -d "+°C")
+fi
+
+echo 🌡 ${temp}°C
