@@ -41,8 +41,8 @@ export GRADLE_USER_HOME="$XDG_DATA_HOME/gradle"
 export PATH="$PATH:$XDG_DATA_HOME/npm/bin"
 
 # runtime:
-# This one seems to break proton so it is commented out for now
-# export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
+# This one seems to work for now
+export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
 # export TMUX_TMPDIR="$XDG_RUNTIME_DIR"
 
 # Start graphical server on tty1

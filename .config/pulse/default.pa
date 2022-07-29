@@ -6,7 +6,7 @@ load-module module-echo-cancel source_name=echo_cancel_source
 
 # Create denoised mic device
 load-module module-null-sink sink_name=denoised_mic_sink rate=48000 sink_properties='device.description="Denoised Mic"'
-load-module module-ladspa-sink sink_name=mic_sink sink_master=denoised_mic_sink label=noise_suppressor_stereo plugin=/usr/lib/ladspa/librnnoise_ladspa.so control=50 sink_properties='device.description="Noise Suppressor"'
+load-module module-ladspa-sink sink_name=mic_sink sink_master=denoised_mic_sink label=noise_suppressor_stereo plugin=/usr/lib/ladspa/librnnoise_ladspa.so control=50,200,0,0,0 sink_properties='device.description="Noise Suppressor"'
 #load-module module-loopback source=alsa_input.pci-0000_0e_00.4.analog-stereo sink=mic_sink channels=2 source_dont_move=true sink_dont_move=true
 load-module module-loopback source=echo_cancel_source sink=mic_sink channels=2 source_dont_move=true sink_dont_move=true latency_msec=1
 # Set as default source
