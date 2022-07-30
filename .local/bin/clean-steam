@@ -1,0 +1,3 @@
+#!/bin/sh
+
+rm -r ~/.pulse-cookie ~/.steampath ~/.steampid ~/.steam
