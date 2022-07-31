@@ -20,6 +20,7 @@ fi
 sxhkd &
 # wal -i ~/.config/wallpapers/winter.jpeg
 xrdb $XDG_CONFIG_HOME/X11/Xresources
+# xrdb -merge $XDG_CACHE_HOME/wal/colors.Xresources
 # redshift -P -O 3200
 # find out if we want to use this instead
 # unclutter &
