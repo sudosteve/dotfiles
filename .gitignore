@@ -1,8 +1,6 @@
 .config/BraveSoftware/
-.config/Code - OSS/
 .config/Epic/
 .config/Google/
-.config/Minecraft Linux Launcher/
 .config/QDirStat/
 .config/QtProject.conf
 .config/Thunar/
@@ -19,9 +17,7 @@
 .config/gtk-3.0/
 .config/htop/
 .config/ipython/
-.config/libfm/
 .config/lutris/
-.config/menus
 .config/mimeapps.list
 .config/npm/
 .config/nvim/.netrwhist
@@ -39,24 +35,16 @@
 .local/lib/
 .local/share/Android/
 .local/share/Google/
-.local/share/Minecraft Linux Launcher/
 .local/share/PolyMC/
 .local/share/Steam/
 .local/share/TelegramDesktop/
-.local/share/applications/discord-*
-.local/share/applications/mimeinfo.cache
-.local/share/applications/userapp-Telegram Desktop-*
-.local/share/applications/wine-extension-*
-.local/share/applications/wine/
 .local/share/cargo/
-.local/share/desktop-directories/
 .local/share/gnupg/
 .local/share/gradle/
 .local/share/gvfs-metadata/
 .local/share/icons/
 .local/share/keyrings/
 .local/share/lutris/
-.local/share/mime/
 .local/share/npm/
 .local/share/nvim/
 .local/share/pki/
