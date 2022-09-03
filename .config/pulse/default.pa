@@ -2,21 +2,22 @@
 
 # Create echo cancel source
 # module-echo-cancel will automatically cancel from the default source
-load-module module-echo-cancel source_name=echo_cancel_source
+load-module module-echo-cancel use_master_format=1 aec_method=webrtc aec_args="analog_gain_control=0\ digital_gain_control=1" source_name=echo_cancel_source
 
 # Create denoised mic device
-load-module module-null-sink sink_name=denoised_mic_sink rate=48000 sink_properties='device.description="Denoised Mic"'
-load-module module-ladspa-sink sink_name=mic_sink sink_master=denoised_mic_sink label=noise_suppressor_stereo plugin=/usr/lib/ladspa/librnnoise_ladspa.so control=50,200,0,0,0 sink_properties='device.description="Noise Suppressor"'
-#load-module module-loopback source=alsa_input.pci-0000_0e_00.4.analog-stereo sink=mic_sink channels=2 source_dont_move=true sink_dont_move=true
-load-module module-loopback source=echo_cancel_source sink=mic_sink channels=2 source_dont_move=true sink_dont_move=true latency_msec=1
+# load-module module-null-sink sink_name=denoised_mic_sink rate=48000 sink_properties='device.description="Denoised Mic"'
+# load-module module-ladspa-sink sink_name=mic_sink sink_master=denoised_mic_sink label=noise_suppressor_stereo plugin=/usr/lib/ladspa/librnnoise_ladspa.so control=50,200,0,0,0 sink_properties='device.description="Noise Suppressor"'
+# load-module module-loopback source=echo_cancel_source sink=mic_sink channels=2 source_dont_move=true sink_dont_move=true
 # Set as default source
-set-default-source denoised_mic_sink.monitor
+# set-default-source denoised_mic_sink.monitor
 
 # Create virtual sinks for myself, broadcast, and both
 load-module module-null-sink sink_name=stream_sink sink_properties='device.description="My Stream"'
 load-module module-null-sink sink_name=mic_and_stream_sink sink_properties='device.description="Mic + Stream"'
 # Loopback the mic and stream to mic_and_stream_sink
-load-module module-loopback source=denoised_mic_sink.monitor sink=mic_and_stream_sink
+# load-module module-loopback source=denoised_mic_sink.monitor sink=mic_and_stream_sink
+load-module module-loopback source=echo_cancel_source sink=mic_and_stream_sink
 load-module module-loopback source=stream_sink.monitor sink=mic_and_stream_sink
 # Loopback the stream to my audio
 load-module module-loopback source=stream_sink.monitor sink=alsa_output.pci-0000_0e_00.4.analog-surround-51
+load-module module-loopback source=stream_sink.monitor sink=alsa_output.usb-Schiit_Audio_I_m_Fulla_Schiit-00.iec958-stereo
