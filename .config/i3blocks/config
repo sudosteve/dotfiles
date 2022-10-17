@@ -36,7 +36,6 @@ interval=20
 
 [clock]
 color=#c556f5
-label=📅
 interval=1
 
 [internet]

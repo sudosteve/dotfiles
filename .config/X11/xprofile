@@ -3,6 +3,8 @@
 # Variables
 export STATUSBAR="i3blocks"
 export XDG_CONFIG_HOME="$HOME/.config"
+export HEADPHONES="alsa_output.usb-Schiit_Audio_I_m_Fulla_Schiit-00.iec958-stereo"
+export SPEAKERS="alsa_output.pci-0000_0c_00.1.hdmi-stereo-extra2"
 
 # Fix Gnome Apps Slow Start due to failing services
 dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY
@@ -16,11 +18,12 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 # Setup commands
+(pactl set-default-sink $HEADPHONES && pkill -RTMIN+10 "${STATUSBAR}") &
 # setxkbmap -option caps:swapescape
 sxhkd &
 # wal -i ~/.config/wallpapers/winter.jpeg
 xrdb $XDG_CONFIG_HOME/X11/Xresources
-# xrdb -merge $XDG_CACHE_HOME/wal/colors.Xresources
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 # redshift -P -O 3200
 # find out if we want to use this instead
 # unclutter &
