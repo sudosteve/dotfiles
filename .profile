@@ -38,7 +38,7 @@ export GRADLE_USER_HOME="$XDG_DATA_HOME/gradle"
 
 # export PATH="$PATH:$(du "$CARGO_HOME/bin/" | cut -f2 | tr '\n' ':' | sed 's/:*$//')"
 # export PATH="$(du "$CARGO_HOME/bin/" | cut -f2 | tr '\n' ':' | sed 's/:*$//'):$PATH"
-export PATH="$PATH:$XDG_DATA_HOME/npm/bin"
+export PATH="$PATH:$XDG_DATA_HOME/npm/bin:$CARGO_HOME/bin"
 
 # runtime:
 # This one seems to work for now

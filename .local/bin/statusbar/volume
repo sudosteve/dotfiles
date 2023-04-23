@@ -5,7 +5,8 @@
 sink="$(pactl get-default-sink)"
 
 case $BLOCK_BUTTON in
-    1) setsid "$TERMINAL" -e pulsemixer & ;;
+    # 1) setsid "$TERMINAL" -e pulsemixer & ;;
+    1) audio-select ;;
     2) pactl set-sink-mute $sink toggle ;;
     4) pactl set-sink-volume $sink +5%;;
     5) pactl set-sink-volume $sink -5%;;

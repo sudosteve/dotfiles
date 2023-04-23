@@ -1,3 +1,61 @@
-sources = []
-sinks = []
 use_dark_theme = true
+
+[[sources]]
+name = 'alsa_input.usb-Schiit_Audio_I_m_Fulla_Schiit-00.iec958-stereo'
+label = '''I'm Fulla Schiit Digital Stereo (IEC958)'''
+hidden = true
+
+[[sources]]
+name = 'alsa_output.pci-0000_0c_00.1.hdmi-stereo-extra2.monitor'
+label = 'Monitor of Navi 21/23 HDMI/DP Audio Controller Digital Stereo (HDMI 3)'
+hidden = true
+
+[[sources]]
+name = 'alsa_output.usb-Schiit_Audio_I_m_Fulla_Schiit-00.iec958-stereo.echo-cancel.monitor'
+label = '''Monitor of I'm Fulla Schiit Digital Stereo (IEC958) (echo cancelled with I'm Fulla Schiit Digital Stereo (IEC958))'''
+hidden = true
+
+[[sources]]
+name = 'alsa_output.usb-Schiit_Audio_I_m_Fulla_Schiit-00.iec958-stereo.monitor'
+label = '''Monitor of I'm Fulla Schiit Digital Stereo (IEC958)'''
+hidden = true
+
+[[sources]]
+name = 'echo_cancel_source'
+label = 'Echo Cancelled Mic'
+hidden = false
+
+[[sources]]
+name = 'mic_and_stream_sink.monitor'
+label = 'Mic + Stream'
+hidden = false
+
+[[sources]]
+name = 'stream_sink.monitor'
+label = 'Stream'
+hidden = false
+
+[[sinks]]
+name = 'alsa_output.pci-0000_0c_00.1.hdmi-stereo-extra2'
+label = 'Speakers'
+hidden = false
+
+[[sinks]]
+name = 'alsa_output.usb-Schiit_Audio_I_m_Fulla_Schiit-00.iec958-stereo'
+label = 'Headphones'
+hidden = false
+
+[[sinks]]
+name = 'alsa_output.usb-Schiit_Audio_I_m_Fulla_Schiit-00.iec958-stereo.echo-cancel'
+label = '''I'm Fulla Schiit Digital Stereo (IEC958) (echo cancelled with I'm Fulla Schiit Digital Stereo (IEC958))'''
+hidden = true
+
+[[sinks]]
+name = 'mic_and_stream_sink'
+label = 'Mic + Stream'
+hidden = true
+
+[[sinks]]
+name = 'stream_sink'
+label = 'My Stream'
+hidden = true
