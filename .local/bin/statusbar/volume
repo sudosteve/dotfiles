@@ -2,9 +2,6 @@
 
 # Prints the current volume or 🔇 if muted. Uses PulseAudio by default,
 
-# Uses PulseAudio by default. Uncomment to use alsa mixer instead.
-# useamixer=true
-
 sink="$(pactl get-default-sink)"
 
 case $BLOCK_BUTTON in

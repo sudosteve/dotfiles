@@ -1,8 +1,13 @@
 Things that shouldn't be here:
 - .expo
-- .fehbg (probably won't get rid of)
 - .steam* (3 things, it's the games' faults)
 - .vscode-oss (I have no idea why this is needed)
-- .wine (Look into this one)
 - .Xauthority (caused issues with Steam, need to retest)
+
+Things to do:
+- Fancy grub boot menu
+- Fine tune gpu/cpu performance
+
+Misc:
+- .Xauthority has been removed but I'm still concerned about this
 

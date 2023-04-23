@@ -27,6 +27,8 @@ XF86AudioLowerVolume
         pulsemixer --max-volume 100 --change-volume -5 && pkill -RTMIN+10 i3blocks
 XF86AudioMute
         pulsemixer --toggle-mute && pkill -RTMIN+10 i3blocks
+alt + p
+        pulseaudio -k && pactl set-default-sink $HEADPHONES && pkill -RTMIN+10 i3blocks
 
 # Brightness
 XF86MonBrightnessUp
@@ -34,3 +36,7 @@ XF86MonBrightnessUp
 XF86MonBrightnessDown
         xbacklight -dec 20
 
+# Random stuff
+
+alt + t
+        python ~/dev/chatbot_workspace/script.py "$(xclip -o)" | xclip

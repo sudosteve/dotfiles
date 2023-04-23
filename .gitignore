@@ -1,6 +1,7 @@
 .config/BraveSoftware/
 .config/Epic/
 .config/Google/
+.config/Popcorn-Time/
 .config/QDirStat/
 .config/QtProject.conf
 .config/Thunar/
@@ -13,6 +14,7 @@
 .config/corectrl/
 .config/dconf/
 .config/discord/
+.config/eas-cli-nodejs/
 .config/gtk-2.0/
 .config/gtk-3.0/
 .config/htop/
@@ -25,11 +27,13 @@
 .config/oh-my-zsh/
 .config/pavucontrol.ini
 .config/pulse/
+.config/qBittorrent/
 .config/rpcs3/
 .config/spotify/
 .config/sqlitebrowser/
 .config/unity3d/
 .config/xfce4/
+.config/yuzu/
 .config/zoomus.conf
 .config/zsh/.zcompdump-*
 
