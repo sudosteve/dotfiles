@@ -1,6 +1,21 @@
 use_dark_theme = true
 
 [[sources]]
+name = 'echo_cancel_source'
+label = 'Echo Cancelled Mic'
+hidden = false
+
+[[sources]]
+name = 'mic_and_stream_sink.monitor'
+label = 'Mic + Stream'
+hidden = false
+
+[[sources]]
+name = 'stream_sink.monitor'
+label = 'Stream'
+hidden = false
+
+[[sources]]
 name = 'alsa_input.usb-Schiit_Audio_I_m_Fulla_Schiit-00.iec958-stereo'
 label = '''I'm Fulla Schiit Digital Stereo (IEC958)'''
 hidden = true
@@ -19,21 +34,6 @@ hidden = true
 name = 'alsa_output.usb-Schiit_Audio_I_m_Fulla_Schiit-00.iec958-stereo.monitor'
 label = '''Monitor of I'm Fulla Schiit Digital Stereo (IEC958)'''
 hidden = true
-
-[[sources]]
-name = 'echo_cancel_source'
-label = 'Echo Cancelled Mic'
-hidden = false
-
-[[sources]]
-name = 'mic_and_stream_sink.monitor'
-label = 'Mic + Stream'
-hidden = false
-
-[[sources]]
-name = 'stream_sink.monitor'
-label = 'Stream'
-hidden = false
 
 [[sources]]
 name = 'alsa_input.pci-0000_00_1f.3.analog-stereo'
@@ -61,6 +61,11 @@ label = 'Headphones'
 hidden = false
 
 [[sinks]]
+name = 'alsa_output.pci-0000_00_1f.3.analog-stereo'
+label = 'Laptop Audio'
+hidden = false
+
+[[sinks]]
 name = 'alsa_output.usb-Schiit_Audio_I_m_Fulla_Schiit-00.iec958-stereo.echo-cancel'
 label = '''I'm Fulla Schiit Digital Stereo (IEC958) (echo cancelled with I'm Fulla Schiit Digital Stereo (IEC958))'''
 hidden = true
@@ -74,11 +79,6 @@ hidden = true
 name = 'stream_sink'
 label = 'My Stream'
 hidden = true
-
-[[sinks]]
-name = 'alsa_output.pci-0000_00_1f.3.analog-stereo'
-label = 'Laptop Audio'
-hidden = false
 
 [[sinks]]
 name = 'alsa_output.pci-0000_00_1f.3.analog-stereo.echo-cancel'
