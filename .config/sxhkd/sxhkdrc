@@ -16,7 +16,9 @@ alt + b
 # Recording
 # Screenshots
 Print
-        mkdir -p pix/maim && maim pix/maim/pic-full-$(date '+%y%m%d-%H%M-%S').png
+        mkdir -p pix/maim && maim pix/maim/pic-full-$(date '+%Y-%m-%d--T%H-%M-%S').png
+ctrl + Print
+        mkdir -p pix/maim && maim -i $(xdotool getactivewindow) pix/maim/pic-window-$(date '+%Y-%m-%d--T%H-%M-%S').png
 shift + Print
         maimpick
 
