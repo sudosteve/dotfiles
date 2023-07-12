@@ -12,6 +12,8 @@ ZSH_THEME="a_custom"
 [ -f "$XDG_CONFIG_HOME/aliasrc" ] && source "$XDG_CONFIG_HOME/aliasrc"
 
 export HISTFILE="$XDG_DATA_HOME/zsh/history"
+export HISTSIZE=1000000
+export SAVEHIST=$HISTSIZE
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load

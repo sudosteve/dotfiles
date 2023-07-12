@@ -1,0 +1,36 @@
+#!/bin/sh
+
+# Prints all batteries, their percentage remaining and an emoji corresponding
+# to charge status (🔌 for plugged up, 🔋 for discharging on battery, etc.).
+
+data=$(razer-cli -ls | grep charg | awk '{print $2}')
+[ -n "$data" ] || exit
+
+battery_file=~/.local/state/last_mouse_battery_capacity
+[ -f "$battery_file" ] || echo 100 > $battery_file
+last_capacity=$(cat $battery_file)
+
+case $BLOCK_BUTTON in
+    3) notify-send "🖱 Mouse battery module" \
+"🔌: charging\n❗: battery very low!" ;;
+esac
+
+# When mouse goes idle, this will falsely report charge as 0
+capacity=$(echo $data | awk '{print $1}')
+[ "$capacity" = 0 ] && capacity=$last_capacity
+
+charging=$(echo $data | awk '{print $2}')
+[ "$charging" = "True" ] && icon="🔌"
+
+# If it is discharging and 25% or less, we will add a ❗ as a warning.
+[ "$capacity" -le 25 ] && [ "$charging" = "False" ] && icon="❗"
+
+# If battery is too low, send notification to user
+[ "$capacity" -le 10 ] && [ "$last_capacity" -gt 10 ] && \
+    notify-send "🔋 Battery low ❗"
+[ "$capacity" -le 5 ] && [ "$last_capacity" -gt 5 ] && \
+    notify-send "🔋 Battery low ❗"
+echo $capacity > $battery_file
+
+printf '🖱 %s%% %s\n' "$capacity" "$icon"
+#sed s/\ $/\\n/

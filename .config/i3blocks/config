@@ -34,10 +34,15 @@ color=#c556f5
 command=battery BAT1
 interval=20
 
-[clock]
+[mouse_battery]
 color=#c556f5
+command=mouse_battery
+interval=20
+
+[clock]
+color=#56c0f5
 interval=1
 
 [internet]
-color=#56c0f5
+color=#c556f5
 interval=10
