@@ -3,7 +3,7 @@
 # Prints all batteries, their percentage remaining and an emoji corresponding
 # to charge status (🔌 for plugged up, 🔋 for discharging on battery, etc.).
 
-data=$(razer-cli -ls | grep charg | awk '{print $2}')
+data=$(razer-rs | grep charg | awk '{print $2}')
 [ -n "$data" ] || exit
 
 battery_file=~/.local/state/last_mouse_battery_capacity
@@ -20,7 +20,7 @@ capacity=$(echo $data | awk '{print $1}')
 [ "$capacity" = 0 ] && capacity=$last_capacity
 
 charging=$(echo $data | awk '{print $2}')
-[ "$charging" = "True" ] && icon="🔌"
+[[ "$charging" = [tT]rue ]] && icon="🔌"
 
 # If it is discharging and 25% or less, we will add a ❗ as a warning.
 [ "$capacity" -le 25 ] && [ "$charging" = "False" ] && icon="❗"
