@@ -23,9 +23,11 @@
 .config/libreoffice/
 .config/lutris/
 .config/mimeapps.list
+.config/notion-app/
 .config/npm/
 .config/nvim/.netrwhist
 .config/obs-studio/
+.config/obsidian/
 .config/oh-my-zsh/
 .config/pavucontrol.ini
 .config/pulse/
@@ -36,6 +38,7 @@
 .config/unity3d/
 .config/xfce4/
 .config/yuzu/
+.config/zoom.conf
 .config/zoomus.conf
 .config/zsh/.zcompdump-*
 

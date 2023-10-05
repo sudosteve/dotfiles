@@ -4,15 +4,17 @@
 # choose the kind of screenshot to take, including copying the image or even
 # highlighting an area to copy. scrotcucks on suicidewatch right now.
 
-mkdir -p pix/maim
+MAIM_DIR=$HOME/pix/maim
+
+mkdir -p $MAIM_DIR
 date=$(date '+%Y-%m-%d--T%H-%M-%S')
 window=$(xdotool getactivewindow)
 
 case "$(printf "a selected area\\ncurrent window\\nfull screen\\na selected area (copy)\\ncurrent window (copy)\\nfull screen (copy)" \
     | dmenu -l 6 -i -p "Screenshot which area?")" in
-	"a selected area")        maim -s         pix/maim/pic-selected-$date.png ;;
-	"current window")         maim -i $window pix/maim/pic-window-$date.png ;;
-	"full screen")            maim            pix/maim/pic-full-$date.png ;;
+	"a selected area")        maim -s         $MAIM_DIR/pic-selected-$date.png ;;
+	"current window")         maim -i $window $MAIM_DIR/pic-window-$date.png ;;
+	"full screen")            maim            $MAIM_DIR/pic-full-$date.png ;;
 	"a selected area (copy)") maim -s         | xclip -selection clipboard -t image/png ;;
 	"current window (copy)")  maim -i $window | xclip -selection clipboard -t image/png ;;
 	"full screen (copy)")     maim            | xclip -selection clipboard -t image/png ;;
