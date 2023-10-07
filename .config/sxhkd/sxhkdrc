@@ -13,7 +13,6 @@ alt + b
 # System stuff
 # put power off, scr lock, etc.
 
-# Recording
 # Screenshots
 Print
         mkdir -p pix/maim && maim pix/maim/pic-full-$(date '+%Y-%m-%d--T%H-%M-%S').png
@@ -21,6 +20,10 @@ ctrl + Print
         mkdir -p pix/maim && maim -i $(xdotool getactivewindow) pix/maim/pic-window-$(date '+%Y-%m-%d--T%H-%M-%S').png
 shift + Print
         maimpick
+
+# Recording
+alt + Print
+        save-replay
 
 # Volume
 XF86AudioRaiseVolume

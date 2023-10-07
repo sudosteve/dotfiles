@@ -22,7 +22,6 @@ alias \
     porphans="pacman -Qtdq" \
     orun="optirun" \
     vi="vim" \
-    pulserestart="pulseaudio -k && pactl set-default-sink $HEADPHONES && pkill -RTMIN+10 $STATUSBAR"
 
 # volume and brightness
 alias \
