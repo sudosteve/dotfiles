@@ -20,9 +20,13 @@ load-module module-loopback source=stream_sink.monitor
 load-module module-loopback source=stream_sink.monitor sink=mic_and_stream_sink
 
 #
-# Then create the echo-cancel mic and loopback to mic_and_stream_sink.
+# Create echo-cancel mic.
 #
-load-module module-echo-cancel use_master_format=1 aec_method=webrtc aec_args="analog_gain_control=0\ digital_gain_control=1" source_name=echo_cancel_source sink_master=stream_sink
-load-module module-loopback source=echo_cancel_source sink=mic_and_stream_sink
+load-module module-echo-cancel use_master_format=1 aec_method=webrtc aec_args="analog_gain_control=0 digital_gain_control=1" source_name=echo_cancel_source
 set-default-source echo_cancel_source
+
+#
+# Loopback default source to mic_and_stream_sink.
+#
+load-module module-loopback sink=mic_and_stream_sink
 

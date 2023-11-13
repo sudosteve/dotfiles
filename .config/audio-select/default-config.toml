@@ -31,28 +31,23 @@ label = '''Monitor of I'm Fulla Schiit Digital Stereo (IEC958)'''
 hidden = true
 
 [[sources]]
-name = 'alsa_input.pci-0000_00_1f.3.analog-stereo'
-label = 'Built-in Audio Analog Stereo'
+name = 'alsa_output.usb-Schiit_Audio_I_m_Fulla_Schiit-00.iec958-stereo.echo-cancel.monitor'
+label = '''Monitor of I'm Fulla Schiit Digital Stereo (IEC958) (echo cancelled with I'm Fulla Schiit Digital Stereo (IEC958))'''
 hidden = true
 
 [[sources]]
-name = 'alsa_output.pci-0000_00_1f.3.analog-stereo.monitor'
-label = 'Monitor of Built-in Audio Analog Stereo'
+name = 'echo_cancel_sink.monitor'
+label = '''Monitor of I'm Fulla Schiit Digital Stereo (IEC958) (echo cancelled with I'm Fulla Schiit Digital Stereo (IEC958))'''
 hidden = true
-
-[[sources]]
-name = 'stream_sink.echo-cancel.monitor'
-label = '''Monitor of My Stream (echo cancelled with I'm Fulla Schiit Digital Stereo (IEC958))'''
-hidden = true
-
-[[sinks]]
-name = 'alsa_output.pci-0000_0c_00.1.hdmi-stereo-extra2'
-label = 'Speakers'
-hidden = false
 
 [[sinks]]
 name = 'alsa_output.usb-Schiit_Audio_I_m_Fulla_Schiit-00.iec958-stereo'
 label = 'Headphones'
+hidden = false
+
+[[sinks]]
+name = 'alsa_output.pci-0000_0c_00.1.hdmi-stereo-extra2'
+label = 'Speakers'
 hidden = false
 
 [[sinks]]
@@ -71,6 +66,11 @@ label = 'My Stream'
 hidden = true
 
 [[sinks]]
-name = 'stream_sink.echo-cancel'
-label = '''My Stream (echo cancelled with I'm Fulla Schiit Digital Stereo (IEC958))'''
+name = 'alsa_output.usb-Schiit_Audio_I_m_Fulla_Schiit-00.iec958-stereo.echo-cancel'
+label = '''I'm Fulla Schiit Digital Stereo (IEC958) (echo cancelled with I'm Fulla Schiit Digital Stereo (IEC958))'''
+hidden = true
+
+[[sinks]]
+name = 'echo_cancel_sink'
+label = '''I'm Fulla Schiit Digital Stereo (IEC958) (echo cancelled with I'm Fulla Schiit Digital Stereo (IEC958))'''
 hidden = true
