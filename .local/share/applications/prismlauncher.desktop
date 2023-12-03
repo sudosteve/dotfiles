@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Minecraft
+Version=1.0
+Comment=PrismLauncher Minecraft Launcher
+Type=Application
+Exec=prismlauncher -l 1.19
+StartupNotify=true
+Icon=org.prismlauncher.PrismLauncher
+Categories=Game;Application;
+StartupWMClass=PrismLauncher

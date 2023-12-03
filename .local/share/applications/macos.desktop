@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Mac OSX KVM
+Comment=OSX-KVM
+Type=Application
+Exec=cd ~/apps/OSX-KVM && ./OpenCore-Boot.sh
+Terminal=false
+Type=Aplication
+StartupNotify=true
