@@ -9,6 +9,7 @@
 .config/UNDERTALE/
 .config/VirtualBox/
 .config/VSCodium/
+.config/aws/
 .config/cef_user_data/
 .config/chromium/
 .config/configstore/

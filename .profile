@@ -22,6 +22,8 @@ export PYTHONUSERBASE="$XDG_DATA_HOME/python"
 export PATH="$PATH:$PYTHONUSERBASE/bin"
 
 # config:
+export AWS_SHARED_CREDENTIALS_FILE="$XDG_CONFIG_HOME/aws/credentials"
+export AWS_CONFIG_FILE="$XDG_CONFIG_HOME/aws/config"
 export WGETRC="$XDG_CONFIG_HOME/wget/wgetrc"
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 # export ALSA_CONFIG_PATH="$XDG_CONFIG_HOME/alsa/asoundrc"
