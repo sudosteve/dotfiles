@@ -5,6 +5,7 @@
 .config/Popcorn-Time/
 .config/QDirStat/
 .config/QtProject.conf
+.config/Signal/
 .config/Thunar/
 .config/UNDERTALE/
 .config/VirtualBox/
@@ -46,5 +47,8 @@
 .config/zsh/.zcompdump-*
 
 .local/lib/
-.local/share/
+.local/share/*
+!.local/share/applications/
+.local/share/applications/*.cache
+.local/share/applications/userapp*.desktop
 .local/state/
