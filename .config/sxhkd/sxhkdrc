@@ -24,6 +24,8 @@ shift + Print
 # Recording
 alt + Print
         save-replay
+alt + shift + Print
+        record-screen
 
 # Volume
 XF86AudioRaiseVolume
