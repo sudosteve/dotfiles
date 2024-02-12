@@ -1,0 +1,8 @@
+import = ["/home/steve/.cache/wal/colors-alacritty.toml"]
+
+[font]
+size = 9.0
+
+[window.padding]
+x = 2
+y = 2

@@ -11,6 +11,7 @@
 .config/UNDERTALE/
 .config/VirtualBox/
 .config/VSCodium/
+.config/Zulip/
 .config/aws/
 .config/cef_user_data/
 .config/chromium/
