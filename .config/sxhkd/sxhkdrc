@@ -37,6 +37,16 @@ XF86AudioMute
 alt + p
         pulseaudio -k && pactl set-default-sink $HEADPHONES && pkill -RTMIN+10 i3blocks
 
+# Playback
+XF86AudioPlay
+        playerctl play-pause
+XF86AudioStop
+        playerctl stop
+XF86AudioPrev
+        playerctl previous
+XF86AudioNext
+        playerctl next
+
 # Brightness
 XF86MonBrightnessUp
         xbacklight -inc 20
@@ -45,5 +55,5 @@ XF86MonBrightnessDown
 
 # Random stuff
 
-alt + t
-        python ~/dev/chatbot_workspace/script.py "$(xclip -o)" | xclip
+# alt + t
+#         python ~/dev/chatbot_workspace/script.py "$(xclip -o)" | xclip
