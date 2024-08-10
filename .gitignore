@@ -48,6 +48,7 @@
 .config/zoomus.conf
 .config/zsh/.zcompdump-*
 
+.local/bin/games/
 .local/lib/
 .local/share/*
 !.local/share/applications/
