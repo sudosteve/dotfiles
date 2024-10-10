@@ -1,0 +1,8 @@
+#!/bin/sh
+
+players=$(playerctl --list-all $@)
+wc=$(echo $players | wc -w)
+selected_player=$(echo "$players" | dmenu -l $wc -i -p "Select a player:")
+
+playerctl --player $selected_player $@
+
