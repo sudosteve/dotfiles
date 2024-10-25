@@ -1,3 +1,4 @@
+[general]
 import = ["/home/steve/.cache/wal/colors-alacritty.toml"]
 
 [font]
