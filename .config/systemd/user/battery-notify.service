@@ -1,5 +1,5 @@
 [Unit]
-Description=Send a notificaton when the battery goes below 5% or 10%
+Description=Script that sends a notificaton when the battery goes below 5% or 10%
 
 [Service]
 ExecStart=%h/.local/bin/battery-notify
