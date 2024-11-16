@@ -1,0 +1,8 @@
+[Unit]
+Description=Send a notificaton when the battery goes below 5% or 10%
+
+[Service]
+ExecStart=%h/.local/bin/battery-notify
+
+[Install]
+WantedBy=default.target
