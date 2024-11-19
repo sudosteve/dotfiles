@@ -1,13 +1,8 @@
 Things that shouldn't be here:
-- .expo
-- .steam* (3 things, it's the games' faults)
-- .vscode-oss (I have no idea why this is needed)
-- .Xauthority (caused issues with Steam, need to retest)
+- .expo (Not an issue as long as I don't develop in react-native)
+- .steam* (4 things, it's the games' faults)
 
 Things to do:
 - Fancy grub boot menu
 - Fine tune gpu/cpu performance
-
-Misc:
-- .Xauthority has been removed but I'm still concerned about this
 
