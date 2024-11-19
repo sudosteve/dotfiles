@@ -3,7 +3,7 @@
 # Prints all batteries, their percentage remaining and an emoji corresponding
 # to charge status (🔌 for plugged up, 🔋 for discharging on battery, etc.).
 
-data=$(razer-rs | grep charg | awk '{print $2}')
+data=$(razer-rs -b | grep charg | awk '{print $2}')
 [ -n "$data" ] || exit
 
 battery_file=~/.local/state/last_mouse_battery_capacity
