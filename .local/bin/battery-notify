@@ -1,0 +1,22 @@
+#!/bin/sh
+
+last_capacity=100
+
+while :
+do
+    sleep 20
+    # Loop through all attached batteries.
+    for battery in /sys/class/power_supply/BAT?
+    do
+        # Get its remaining capacity and charge status.
+        capacity=$(cat "$battery"/capacity) || break
+
+        # Send notifications when capacity goes below 5% or 10%
+        [ "$capacity" -le 10 ] && [ "$last_capacity" -gt 10 ] && \
+            notify-send "🔋 Battery low ❗$last_capacity"
+        [ "$capacity" -le 4 ] && [ "$last_capacity" -gt 4 ] && \
+            notify-send -u critical "🔋 Battery low ❗"
+
+        last_capacity=$capacity
+    done
+done
