@@ -13,8 +13,8 @@ do
 
         # Send notifications when capacity goes below 5% or 10%
         [ "$capacity" -le 10 ] && [ "$last_capacity" -gt 10 ] && \
-            notify-send "🔋 Battery low ❗$last_capacity"
-        [ "$capacity" -le 4 ] && [ "$last_capacity" -gt 4 ] && \
+            notify-send "🔋 Battery low ❗"
+        [ "$capacity" -le 5 ] && [ "$last_capacity" -gt 5 ] && \
             notify-send -u critical "🔋 Battery low ❗"
 
         last_capacity=$capacity
