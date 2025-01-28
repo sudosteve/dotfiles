@@ -181,7 +181,7 @@ bar {
     status_command $STATUSBAR
     position top
     mode dock
-    modifier None
+    modifier none
     font pango:Fira Mono 10
     colors {
         background #2F2F2F
