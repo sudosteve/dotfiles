@@ -21,7 +21,7 @@ label = '''I'm Fulla Schiit Digital Stereo (IEC958)'''
 hidden = true
 
 [[sources]]
-name = 'alsa_output.pci-0000_0c_00.1.hdmi-stereo-extra2.monitor'
+name = 'alsa_output.pci-0000_03_00.1.hdmi-stereo-extra2.monitor'
 label = 'Monitor of Navi 21/23 HDMI/DP Audio Controller Digital Stereo (HDMI 3)'
 hidden = true
 
@@ -46,7 +46,7 @@ label = 'Headphones'
 hidden = false
 
 [[sinks]]
-name = 'alsa_output.pci-0000_0c_00.1.hdmi-stereo-extra2'
+name = 'alsa_output.pci-0000_03_00.1.hdmi-stereo-extra2'
 label = 'Speakers'
 hidden = false
 
