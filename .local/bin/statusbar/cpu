@@ -22,7 +22,7 @@ fi
 # newest k10temp method:
 if [[ "$temp" == "" ]]
 then
-    temp=$(sensors | awk '/Tctl/ {print $2}' | tr -d "+°C")
+    temp=$(sensors | awk '/Tccd1/ {print $2}' | tr -d "+°C")
 fi
 
 # works on newer gigabyte mobos, but doesn't give as much precision as k10temp:
