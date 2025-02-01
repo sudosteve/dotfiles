@@ -22,10 +22,11 @@ shift + Print
         maimpick
 
 # Recording
-alt + Print
-        save-replay
-alt + shift + Print
-        record-screen
+# Letting gpu-screen-recorder-ui take care of this now
+# alt + Print
+#         save-replay
+# alt + shift + Print
+#         record-screen
 
 # Volume
 XF86AudioRaiseVolume
