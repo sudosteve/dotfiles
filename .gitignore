@@ -32,7 +32,7 @@
 .config/nvim/.netrwhist
 .config/obs-studio/
 .config/obsidian/
-.config/oh-my-zsh/
+.config/zsh/ohmyzsh/
 .config/pavucontrol.ini
 .config/pulse/
 .config/qBittorrent/
