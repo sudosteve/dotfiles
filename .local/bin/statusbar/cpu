@@ -19,4 +19,10 @@ then
     temp=$(sensors | awk '/Tdie/ {print $2}' | tr -d "+°C")
 fi
 
+# newest k10temp method:
+if [[ "$temp" == "" ]]
+then
+    temp=$(sensors | awk '/Tctl/ {print $2}' | tr -d "+°C")
+fi
+
 echo 🌡 ${temp}°C
