@@ -9,5 +9,7 @@
 
 # xsetroot -solid "#edbcb9"
 export STATUSBAR="i3blocks"
+# Start pipewire-pulse now for statusbar
+pipewire-pulse start
 exec i3
 

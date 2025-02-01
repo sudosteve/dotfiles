@@ -17,8 +17,8 @@ hidden = true
 
 [[sources]]
 name = 'alsa_input.usb-Schiit_Audio_I_m_Fulla_Schiit-00.iec958-stereo'
-label = '''I'm Fulla Schiit Digital Stereo (IEC958)'''
-hidden = true
+label = 'Mic'
+hidden = false
 
 [[sources]]
 name = 'alsa_output.pci-0000_03_00.1.hdmi-stereo-extra2.monitor'
@@ -39,6 +39,11 @@ hidden = true
 name = 'echo_cancel_sink.monitor'
 label = '''Monitor of I'm Fulla Schiit Digital Stereo (IEC958) (echo cancelled with I'm Fulla Schiit Digital Stereo (IEC958))'''
 hidden = true
+
+[[sources]]
+name = 'alsa_input.usb-046d_C922_Pro_Stream_Webcam_9360D0BF-02.iec958-stereo'
+label = 'Webcam'
+hidden = false
 
 [[sinks]]
 name = 'alsa_output.usb-Schiit_Audio_I_m_Fulla_Schiit-00.iec958-stereo'

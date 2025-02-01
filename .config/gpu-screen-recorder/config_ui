@@ -11,7 +11,7 @@ record.record_options.application_audio_invert false
 record.record_options.audio_codec aac
 record.record_options.audio_track device:alsa_output.pci-0000_03_00.1.hdmi-stereo-extra2.monitor
 record.record_options.audio_track device:alsa_output.usb-Schiit_Audio_I_m_Fulla_Schiit-00.iec958-stereo.monitor
-record.record_options.audio_track device:echo_cancel_source
+record.record_options.audio_track device:default_input
 record.record_options.change_video_resolution false
 record.record_options.codec auto
 record.record_options.color_range limited
