@@ -22,14 +22,15 @@ export PYTHONUSERBASE="$XDG_DATA_HOME/python"
 export PATH="$PATH:$PYTHONUSERBASE/bin"
 
 # config:
-export AWS_SHARED_CREDENTIALS_FILE="$XDG_CONFIG_HOME/aws/credentials"
+# export ALSA_CONFIG_PATH="$XDG_CONFIG_HOME/alsa/asoundrc"
 export AWS_CONFIG_FILE="$XDG_CONFIG_HOME/aws/config"
+export AWS_SHARED_CREDENTIALS_FILE="$XDG_CONFIG_HOME/aws/credentials"
+export ELM_HOME="$XDG_CONFIG_HOME/elm"
+export IPYTHONDIR="$XDG_CONFIG_HOME/ipython"
+export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
+export SQLITE_HISTORY="$XDG_STATE_HOME/sqlite_history"
 export WGETRC="$XDG_CONFIG_HOME/wget/wgetrc"
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
-# export ALSA_CONFIG_PATH="$XDG_CONFIG_HOME/alsa/asoundrc"
-export IPYTHONDIR="$XDG_CONFIG_HOME/ipython"
-export ELM_HOME="$XDG_CONFIG_HOME/elm"
-export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
 
 # cache:
 export LESSHISTFILE="-"
