@@ -21,6 +21,7 @@
 .config/dconf/
 .config/discord/
 .config/eas-cli-nodejs/
+.config/elm/
 .config/gtk-2.0/
 .config/gtk-3.0/
 .config/htop/
@@ -33,6 +34,7 @@
 .config/nvim/.netrwhist
 .config/obs-studio/
 .config/obsidian/
+.config/openvr/
 .config/zsh/ohmyzsh/
 .config/pavucontrol.ini
 .config/pulse/
