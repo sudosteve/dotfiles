@@ -9,8 +9,7 @@ record.pause_unpause_hotkey 92 16
 record.record_options.advanced_view true
 record.record_options.application_audio_invert false
 record.record_options.audio_codec aac
-record.record_options.audio_track device:alsa_output.pci-0000_03_00.1.hdmi-stereo-extra2.monitor
-record.record_options.audio_track device:alsa_output.usb-Schiit_Audio_I_m_Fulla_Schiit-00.iec958-stereo.monitor
+record.record_options.audio_track device:default_output
 record.record_options.audio_track device:default_input
 record.record_options.change_video_resolution false
 record.record_options.codec auto
@@ -37,9 +36,8 @@ replay.container mp4
 replay.record_options.advanced_view true
 replay.record_options.application_audio_invert false
 replay.record_options.audio_codec aac
-replay.record_options.audio_track device:alsa_output.pci-0000_03_00.1.hdmi-stereo-extra2.monitor
-replay.record_options.audio_track device:alsa_output.usb-Schiit_Audio_I_m_Fulla_Schiit-00.iec958-stereo.monitor
-replay.record_options.audio_track device:echo_cancel_source
+replay.record_options.audio_track device:default_output
+replay.record_options.audio_track device:default_input
 replay.record_options.change_video_resolution false
 replay.record_options.codec auto
 replay.record_options.color_range limited
