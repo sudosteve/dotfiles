@@ -1,1 +1,1 @@
-git remote set-url origin git@github.com:sk8ersteve/dotfiles.git
+git remote set-url origin git@github.com:sudosteve/dotfiles.git
