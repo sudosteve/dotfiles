@@ -14,4 +14,5 @@ URxvt.scrollBar: off
 ! *.font: xft:Iosevka:size=12
 *.font: xft:Fira Mono:size=10
 
+Xft.dpi: 96
 
