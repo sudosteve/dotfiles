@@ -48,8 +48,8 @@ export GRADLE_USER_HOME="$XDG_DATA_HOME/gradle"
 export PATH="$PATH:$XDG_DATA_HOME/npm/bin:$CARGO_HOME/bin"
 
 # runtime:
-# This one seems to work for now
-export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
+# Custom XAUTHORITY breaks ssh X11 forwarding
+# export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
 # export TMUX_TMPDIR="$XDG_RUNTIME_DIR"
 
 # Start graphical server on tty1
