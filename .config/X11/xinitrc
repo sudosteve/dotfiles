@@ -1,5 +1,11 @@
 #!/bin/sh
 
+##################################################
+#                                                #
+# This file is deprecated. ly-dm loads .xprofile #
+#                                                #
+##################################################
+
 # Run opimus-prime script if we have it
 [ -f /usr/bin/prime-offload ] && /usr/bin/prime-offload
 
