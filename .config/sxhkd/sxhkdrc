@@ -30,13 +30,11 @@ shift + Print
 
 # Volume
 XF86AudioRaiseVolume
-        pulsemixer --max-volume 100 --change-volume +5 && pkill -RTMIN+10 i3blocks
+        wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+ && pkill -RTMIN+10 i3blocks
 XF86AudioLowerVolume
-        pulsemixer --max-volume 100 --change-volume -5 && pkill -RTMIN+10 i3blocks
+        wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%- && pkill -RTMIN+10 i3blocks
 XF86AudioMute
-        pulsemixer --toggle-mute && pkill -RTMIN+10 i3blocks
-alt + p
-        pulseaudio -k && pactl set-default-sink $HEADPHONES && pkill -RTMIN+10 i3blocks
+        wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle && pkill -RTMIN+10 i3blocks
 
 # Playback
 XF86AudioPlay
@@ -50,9 +48,9 @@ XF86AudioNext
 
 # Brightness
 XF86MonBrightnessUp
-        xbacklight -inc 20
+        xbacklight -inc 10
 XF86MonBrightnessDown
-        xbacklight -dec 20
+        xbacklight -dec 10
 
 # Random stuff
 
