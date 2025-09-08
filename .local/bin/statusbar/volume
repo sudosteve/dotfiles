@@ -3,6 +3,11 @@
 # Prints the current volume or 🔇 if muted. Uses PulseAudio by default,
 
 sink="$(pactl get-default-sink)"
+while [[ "$sink" == "@DEFAULT_SINK@" || "$sink" == "auto_null" ]]
+do
+    sleep 0.1
+    sink="$(pactl get-default-sink)"
+done
 
 case $BLOCK_BUTTON in
     # 1) setsid "$TERMINAL" -e pulsemixer & ;;

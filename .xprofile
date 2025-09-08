@@ -12,7 +12,6 @@ export SPEAKERS="alsa_output.pci-0000_03_00.1.hdmi-stereo-extra2"
 dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY
 
 # Setup desktop
-pipewire-pulse start
 sxhkd &
 xrdb $XDG_CONFIG_HOME/X11/Xresources
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
