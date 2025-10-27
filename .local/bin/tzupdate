@@ -1,0 +1,33 @@
+#!/bin/sh
+
+# Log the execution for debugging
+logger "Attempting to run tzupdate at $(date)"
+
+# Give the network a moment to settle and ensure internet connectivity
+# This loop will try up to 5 times with a 10-second delay
+for i in {1..5}; do
+    if ping -c 1 8.8.8.8 &> /dev/null; then
+        logger "Internet connectivity confirmed. Running tzupdate..."
+	tz=$(curl https://ipapi.co/timezone)
+	logger "tzupdate using imezone: $tz"
+        timedatectl set-timezone $tz
+        if [ $? -eq 0 ]; then
+	    echo "success"
+            logger "tzupdate completed successfully."
+            exit 0 # Exit successfully if tzupdate worked
+        else
+	    echo "failure"
+            logger "tzupdate failed after internet check."
+            exit 1 # Exit with error if tzupdate failed
+        fi
+	echo 4
+    else
+	echo "no internet. sleeping"
+        logger "No internet connectivity yet. Retrying in 10 seconds (attempt $i/5)..."
+        sleep 10
+    fi
+done
+
+logger "Failed to establish internet connectivity after multiple attempts. tzupdate aborted."
+exit 1
+
