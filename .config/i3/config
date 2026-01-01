@@ -9,7 +9,8 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-exec_always wal -i ~/.config/wallpapers/winter.jpeg
+# exec_always wal -i ~/.config/wallpapers/winter.jpeg
+exec_always xwallpaper --zoom ~/.config/wallpapers/wave.jpg
 # exec_always redshift -P -O 3000
 
 for_window [class=".*"] border pixel 5
