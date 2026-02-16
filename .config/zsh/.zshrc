@@ -77,6 +77,9 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+zstyle ':completion:*' cache-path "$XDG_CACHE_HOME"/zsh/zcompcache
+compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-$ZSH_VERSION
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
