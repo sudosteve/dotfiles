@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Exit if no battery
+[ -d /sys/class/power_supply/BAT0 ] || exit
+
 # Get the current batter percentage
 battery_percentage=$(cat /sys/class/power_supply/BAT0/capacity)
 
