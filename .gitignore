@@ -14,6 +14,7 @@
 !.config/i3/
 !.config/i3blocks/
 !.config/neofetch/
+!.config/npm/
 !.config/nvim/
 !.config/paru/
 !.config/pipewire/
