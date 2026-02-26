@@ -37,6 +37,7 @@ htop
 hypridle
 hyprland
 hyprlock
+hyprpaper
 hyprshot
 i3-wm
 i3blocks
@@ -76,7 +77,6 @@ openrazer-driver-dkms
 openssh
 os-prober
 otf-firamono-nerd
-pavucontrol
 pipewire-pulse
 playerctl
 plocate

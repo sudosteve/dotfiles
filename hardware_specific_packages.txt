@@ -1,4 +1,5 @@
 amd-ucode
+fprintd
 intel-media-driver
 intel-ucode
 lib32-vulkan-radeon
