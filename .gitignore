@@ -49,3 +49,9 @@
 .local/share/applications/net.lutris*.desktop
 .local/share/applications/userapp*.desktop
 .local/state/
+
+# Generated package diff files
+new.txt
+missing.txt
+aur_new.txt
+aur_missing.txt
