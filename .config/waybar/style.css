@@ -73,7 +73,7 @@ window#waybar.hidden {
 #temperature,
 #backlight,
 #network,
-#pulseaudio,
+#wireplumber,
 #custom-media,
 #tray,
 #idle_inhibitor,
@@ -107,12 +107,12 @@ window#waybar.hidden {
 #idle_inhibitor { color: rgba(205, 214, 244, 0.4); }
 #idle_inhibitor.activated { color: #f9e2af; }
 
-#pulseaudio { color: #f9e2af; }
-#pulseaudio:hover {
+#wireplumber { color: #f9e2af; }
+#wireplumber:hover {
     background-color: rgba(249, 226, 175, 0.1);
     border-radius: 8px;
 }
-#pulseaudio.muted { color: rgba(249, 226, 175, 0.3); }
+#wireplumber.muted { color: rgba(249, 226, 175, 0.3); }
 
 #network { color: #89dceb; }
 #network.disconnected { color: #f38ba8; }
