@@ -133,10 +133,10 @@
       }
     },
     "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "{signalStrength}% ",
-        "format-ethernet": "{ipaddr}/{cidr} ",
+        "format-ethernet": "{bandwidthUpBits} ↑  {bandwidthDownBits} ↓",
         "tooltip-format": "{essid} ({signalStrength}%)\n{ifname} via {gwaddr} ",
+        "tooltip-format-ethernet": "{ipaddr}/{cidr}\n{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
