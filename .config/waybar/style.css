@@ -68,15 +68,12 @@ window#waybar.hidden {
 /* ── Base styling for all modules (transparent bg, no borders) ── */
 #clock,
 #battery,
-#battery.bat2,
 #cpu,
 #memory,
-#disk,
 #temperature,
 #backlight,
 #network,
 #pulseaudio,
-#wireplumber,
 #custom-media,
 #tray,
 #idle_inhibitor,
@@ -92,92 +89,44 @@ window#waybar.hidden {
     box-shadow: none;
 }
 
-/* ── Dividers between right-segment modules ── */
+/* ── Dividers ── */
 .modules-right > widget:not(:last-child) > * {
     border-right: 1px solid rgba(205, 214, 244, 0.15);
 }
 
-/* ── Bright text colors per module ── */
-#mpd {
-    color: #a6e3a1;
+.modules-left > widget:not(:last-child) > * {
+    border-right: 1px solid rgba(205, 214, 244, 0.15);
 }
 
-#mpd.disconnected {
-    color: rgba(205, 214, 244, 0.3);
-}
+/* ── Right segment module colors ── */
+#mpd { color: #a6e3a1; }
+#mpd.disconnected { color: rgba(205, 214, 244, 0.3); }
+#mpd.stopped { color: rgba(166, 227, 161, 0.4); }
+#mpd.paused { color: rgba(166, 227, 161, 0.6); }
 
-#mpd.stopped {
-    color: rgba(166, 227, 161, 0.4);
-}
+#idle_inhibitor { color: rgba(205, 214, 244, 0.4); }
+#idle_inhibitor.activated { color: #f9e2af; }
 
-#mpd.paused {
-    color: rgba(166, 227, 161, 0.6);
-}
-
-#idle_inhibitor {
-    color: rgba(205, 214, 244, 0.4);
-}
-
-#idle_inhibitor.activated {
-    color: #f9e2af;
-}
-
-#pulseaudio {
-    color: #f9e2af;
-}
-
+#pulseaudio { color: #f9e2af; }
 #pulseaudio:hover {
     background-color: rgba(249, 226, 175, 0.1);
     border-radius: 8px;
 }
+#pulseaudio.muted { color: rgba(249, 226, 175, 0.3); }
 
-#pulseaudio.muted {
-    color: rgba(249, 226, 175, 0.3);
-}
+#network { color: #89dceb; }
+#network.disconnected { color: #f38ba8; }
 
-#network {
-    color: #89dceb;
-}
+#power-profiles-daemon { color: #cba6f7; }
+#power-profiles-daemon.performance { color: #f38ba8; }
+#power-profiles-daemon.balanced { color: #89b4fa; }
+#power-profiles-daemon.power-saver { color: #a6e3a1; }
 
-#network.disconnected {
-    color: #f38ba8;
-}
-
-#power-profiles-daemon {
-    color: #cba6f7;
-}
-
-#power-profiles-daemon.performance {
-    color: #f38ba8;
-}
-
-#power-profiles-daemon.balanced {
-    color: #89b4fa;
-}
-
-#power-profiles-daemon.power-saver {
-    color: #a6e3a1;
-}
-
-#cpu {
-    color: #a6e3a1;
-}
-
-#memory {
-    color: #f5c2e7;
-}
-
-#temperature {
-    color: #fab387;
-}
-
-#temperature.critical {
-    color: #f38ba8;
-}
-
-#backlight {
-    color: #94e2d5;
-}
+#cpu { color: #a6e3a1; }
+#memory { color: #f5c2e7; }
+#temperature { color: #fab387; }
+#temperature.critical { color: #f38ba8; }
+#backlight { color: #94e2d5; }
 
 #keyboard-state {
     color: #f9e2af;
@@ -185,30 +134,12 @@ window#waybar.hidden {
     margin: 0;
     min-width: 0;
 }
+#keyboard-state > label { padding: 0 4px; }
+#keyboard-state > label.locked { color: #f9e2af; }
+#keyboard-state > label:not(.locked) { color: rgba(249, 226, 175, 0.2); }
 
-#keyboard-state > label {
-    padding: 0 4px;
-}
-
-#keyboard-state > label.locked {
-    color: #f9e2af;
-}
-
-#keyboard-state > label:not(.locked) {
-    color: rgba(249, 226, 175, 0.2);
-}
-
-#battery {
-    color: #a6e3a1;
-}
-
-#battery.charging, #battery.plugged {
-    color: #a6e3a1;
-}
-
-#battery.warning {
-    color: #f9e2af;
-}
+#battery { color: #a6e3a1; }
+#battery.warning { color: #f9e2af; }
 
 @keyframes blink {
     to {
@@ -226,74 +157,22 @@ window#waybar.hidden {
     animation-direction: alternate;
 }
 
-#clock {
-    color: #89b4fa;
-}
+#clock { color: #89b4fa; }
 
-#tray {
-    color: #cdd6f4;
-}
-
-#tray > .passive {
-    -gtk-icon-effect: dim;
-}
-
+#tray { color: #cdd6f4; }
+#tray > .passive { -gtk-icon-effect: dim; }
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
     color: #f38ba8;
 }
 
-#custom-power {
-    color: #f38ba8;
-}
+#custom-power { color: #f38ba8; }
 
 /* ── Left segment extras ── */
-#scratchpad {
-    color: #cba6f7;
-}
-
-#scratchpad.empty {
-    color: transparent;
-}
+#scratchpad { color: #cba6f7; }
+#scratchpad.empty { color: transparent; }
 
 #custom-media {
     color: #a6e3a1;
     min-width: 100px;
-}
-
-#custom-media.custom-spotify {
-    color: #a6e3a1;
-}
-
-#custom-media.custom-vlc {
-    color: #fab387;
-}
-
-/* Left segment dividers */
-.modules-left > widget:not(:last-child) > * {
-    border-right: 1px solid rgba(205, 214, 244, 0.15);
-}
-
-#privacy {
-    padding: 0;
-}
-
-#privacy-item {
-    padding: 0 5px;
-}
-
-#privacy-item.screenshare {
-    color: #fab387;
-}
-
-#privacy-item.audio-in {
-    color: #a6e3a1;
-}
-
-#privacy-item.audio-out {
-    color: #89b4fa;
-}
-
-label:focus {
-    background-color: #000000;
 }
