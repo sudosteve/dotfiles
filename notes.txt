@@ -5,4 +5,8 @@ Things that shouldn't be here:
 Things to do:
 - Fancy grub boot menu
 - Fine tune gpu/cpu performance
+- Waybar temperature: hwmon numbering (e.g. hwmon4) can change between boots.
+  If this happens, switch to hwmon-path-abs with the stable PCI device path
+  (e.g. /sys/devices/pci0000:00/0000:00:18.3/hwmon) paired with
+  input-filename: "temp1_input" — resilient to renumbering.
 

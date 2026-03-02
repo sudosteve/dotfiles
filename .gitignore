@@ -37,6 +37,7 @@
 .config/nvim/.netrwhist
 .config/systemd/user/default.target.wants/
 .config/systemd/user/sockets.target.wants/
+.config/waybar/local.jsonc
 .config/zsh/.zcompdump-*
 .config/zsh/ohmyzsh/
 
