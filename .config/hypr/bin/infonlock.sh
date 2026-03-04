@@ -10,7 +10,7 @@ battery_status=$(cat /sys/class/power_supply/BAT0/status)
 
 battery_icons=("" "" "" "" "" "")
 
-charging_icon=""
+charging_icon=""
 
 icon_index=$((battery_percentage / 20))
 
