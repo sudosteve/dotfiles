@@ -12,7 +12,7 @@
 
 -- See https://wiki.hypr.land/Configuring/Basics/Monitors/
 hl.monitor({
-    output   = "",
+    output   = "ViewSonic",
     mode     = "2560x1440@165",
     position = "auto",
     scale    = "auto",
@@ -37,11 +37,14 @@ local menu        = "fuzzel"
 -- See https://wiki.hypr.land/Configuring/Basics/Autostart/
 -- Autostart necessary processes (like notifications daemons, status bars, etc.)
 hl.on("hyprland.start", function()
-    hl.exec_cmd("waybar")
+    -- hl.exec_cmd("waybar")
+    -- hl.exec_cmd("qs -c noctalia-shell")
+    hl.exec_cmd("noctalia")
     hl.exec_cmd("hypridle")
     hl.exec_cmd("mako")
     hl.exec_cmd("swaybg -m fill -i ~/.config/wallpapers/wave.jpg")
     hl.exec_cmd('gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"')
+    hl.exec_cmd("systemctl --user start hyprpolkitagent")
 end)
 
 
@@ -52,6 +55,7 @@ end)
 -- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Environment-variables/
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
+hl.env("QT_QPA_PLATFORMTHEME", "gtk3")
 
 
 -----------------------
@@ -294,8 +298,10 @@ hl.bind("XF86AudioRaiseVolume",  hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT
 hl.bind("XF86AudioLowerVolume",  hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"),      { locked = true, repeating = true })
 hl.bind("XF86AudioMute",         hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"),     { locked = true, repeating = true })
 hl.bind("XF86AudioMicMute",      hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"),   { locked = true, repeating = true })
-hl.bind("XF86MonBrightnessUp",   hl.dsp.exec_cmd("brightnessctl -e4 -n2 set 5%+"),                  { locked = true, repeating = true })
-hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("brightnessctl -e4 -n2 set 5%-"),                  { locked = true, repeating = true })
+hl.bind("XF86MonBrightnessUp",   hl.dsp.exec_cmd("noctalia msg brightness-up"),                     { locked = true, repeating = true })
+hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("noctalia msg brightness-down"),                   { locked = true, repeating = true })
+-- hl.bind("XF86MonBrightnessUp",   hl.dsp.exec_cmd("brightnessctl -e4 -n2 set 5%+"),                  { locked = true, repeating = true })
+-- hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("brightnessctl -e4 -n2 set 5%-"),                  { locked = true, repeating = true })
 
 -- Requires playerctl
 hl.bind("XF86AudioNext",  hl.dsp.exec_cmd("playerctl next"),       { locked = true })
@@ -333,3 +339,4 @@ hl.window_rule({
 
     no_focus = true,
 })
+

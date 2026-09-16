@@ -47,6 +47,7 @@
 .local/share/*
 !.local/share/applications/
 .local/share/applications/*.cache
+.local/share/applications/claude-code-url-handler.desktop
 .local/share/applications/net.lutris*.desktop
 .local/share/applications/userapp*.desktop
 .local/state/
