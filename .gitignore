@@ -51,4 +51,7 @@
 .local/share/applications/net.lutris*.desktop
 .local/share/applications/wine-extension-*.desktop
 .local/share/applications/userapp*.desktop
-.local/state/
+.local/state/*
+!.local/state/noctalia/
+.local/state/noctalia/*
+!.local/state/noctalia/settings.toml
